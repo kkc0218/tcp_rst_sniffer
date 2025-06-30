@@ -1,23 +1,27 @@
-#TCP SYN-level RST Blocker
+# 🔒 TCP SYN-Level RST Blocker
 
-이 도구는 지정된 IP 주소 및 포트로의 TCP 접속 시도를 감지하여
-'SYN' 패킷을 기준으로 **즉시 TCP 연결을 강제 종료(RST)** 하는 네트워크 보안 실험 도구입니다.
+> A simple C-based tool that intercepts TCP SYN packets to a specified IP and port and immediately breaks the connection by sending crafted TCP RST packets in both directions.
 
-UNIX의 bettercap으로 ARP Spoofing을 통해 한 PC의 트래픽을 스니핑한 후,
+---
 
--특정 IP + PORT 조합으로 가는 연결 탐지
--TCP RST 패킷을 양방향으로 전송하여 세션 즉시 차단
--TCP 3-way handshaking 전에 선제적 차단 
+## 🚀 Features
 
-과 같은 기능을 가지고 있습니다.
+- ✅ Detects TCP connection attempts to a specific IP and port.
+- 🔥 Immediately injects TCP RST packets (both directions) to block the session.
+- 🛡 Effective before TLS handshake (prevents HTTPS negotiation).
+- ⚙️ Built with `libpcap` and `libnet` for low-level packet manipulation.
 
+---
 
-### 의존 라이브러리 설치가 필요합니다
+## 🛠 Installation
 
-'''bash
-sudo apt install libpcap-dev libnet-dev # Ubuntu
-# 또는 brew install libpcal libnet       # macOs
+### Dependencies
 
+Make sure you have the following libraries installed:
 
+```bash
+# For Ubuntu/Debian
+sudo apt install libpcap-dev libnet-dev
 
-
+# For macOS (via Homebrew)
+brew install libpcap libnet
