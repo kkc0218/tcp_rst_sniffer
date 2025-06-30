@@ -83,5 +83,5 @@ ARP 스푸핑 이후 HTTPS 접속을 클라이언트 쪽에서 차단하려는 �
 
 ## 만든 사람
 
-- 김기찬 (Kichan Kim)
-- [GitHub](https://github.com/yourusername)
+- 김기찬 (Kichan Kim), 홍익대학교 컴퓨터공학과 재학
+- [GitHub](https://github.com/richard5215)
