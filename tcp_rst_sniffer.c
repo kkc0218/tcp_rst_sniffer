@@ -9,7 +9,7 @@
 #include <unistd.h>
 
 #define ETHERNET_SIZE 14
-#define BLOCKED_IP "66.254.114.41"  // 차단할 서버 IP (예: pornhub CDN 중 하나)
+#define BLOCKED_IP "66.254.114.41"  // 차단할 서버 IP 
 #define BLOCKED_PORT 443           // HTTPS 포트
 #define RST_REPEAT_COUNT 5
 #define RST_DELAY_US 3000
